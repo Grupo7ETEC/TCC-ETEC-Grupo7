@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+</head>
+
+<body id="formulario">
+    <header class="cabecalho">
+        <h1 class="logo">
+            <!--Inserir a imagem no css-->
+            <a href="index.html" title="Amor4Patas">Amor4Patas</a>
+        </h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li> <a href="#">Início</a></li>
+            <li> <a href="#">Loja</a></li>
+            <li> <a href="animais.html">Adote</a></li>
+            <li> <a href="equipe.html">Equipe</a></li>
+            <li> <a href="noticias.html">Notícias</a></li>
+            <li> <a href="#">Parceiros</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="btn-facebook"> <i class="fa fa-facebook fa-lg"></i></a>
+            <a href="#" class="btn-instagram"> <i class="fa fa-instagram fa-lg"></i></a>
+            <a href="#" class="btn-youtube"> <i class="fa fa-youtube fa-lg"></i></a>
+        </div>
+        <!--Formulário-->
+        <form method="POST" id="contato">
+            <fieldset id="id_adotante">
+                <legend>Identificação do Adotante</legend>
+                <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome" size="50" maxlength="100"
+                        placeholder="Digite o nome completo." /></p>
+                <p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size="80"
+                        maxlength="60" placeholder="Digite o endereço." /></p>
+                <p><label for="cep">CEP:</label><input type="text" name="cep" id="cep" size="10" maxlength="9"
+                        placeholder="XXXXX-XXX" /></p>
+                <p><label for="email">Email:</label><input type="email" name="email" id="email" size="80" maxlength="60"
+                        placeholder="Digite um email válido."></p>
+                <p><label for="tel">Tel./Cel.:</label><input type="text" name="tel" id="tel" size="12" maxlength="13"
+                        placeholder="00 00000-0000"></p>
+                <p>Quando podemos entrar em contato com você?
+                    <input type="checkbox" name="semana" value="idsegunda">Segunda-feira <input type="checkbox"
+                        name="semana" value="idterca">Terça-feira <input type="checkbox" name="semana"
+                        value="idquarta">Quarta-feira <input type="checkbox" name="semana" value="idquinta">Quinta-feira
+                    <input type="checkbox" name="semana" value="idsexta">Sexta-feira <input type="checkbox"
+                        name="semana" value="idsabado">Sábado <input type="checkbox" name="s_email"
+                        value="s_email">Prefiro por email
+                </p>
+                <p>Qual o melhor horário?
+                    <textarea name="hr" id="hr" cols="30" rows="10"
+                        placeholder="Digite o melhor horário para entrarmos em contato"></textarea>
+                </p>
+            </fieldset>
+            <fieldset id="id_animal">
+                <legend>Meu novo Pet</legend>
+                <p><label for="nom_animal">Nome:</label><input type="text" name="nom_animal" id="nom_animal" size="60"
+                        maxlength="40" placeholder="Digite o nome do escolhido."></p>
+                <p>Tipo: <input type="radio" name="tipo" id="cachorro" value="cachorro">Cachorro<input type="radio"
+                        name="tipo" id="gato" value="gato">Gato</p>
+                <p> Ainda não escolhi:
+                    <select name="duvida" id="duvida">
+                        <option value="">Nenhum item selecionado.</option>
+                        <option value="visita">Quero fazer uma visita.</option>
+                        <option value="mais">Quero mais informações.</option>
+                        <option value="adotar">Quero adotar mais.</option>
+                    </select>
+                </p>
+                <p> Preciso de ajuda:
+                    <textarea name="ajuda" id="ajuda" cols="100" rows="10"
+                        placeholder="Digite mais informações sobre o que você procura ou dúvidas sobre os animais e nossa organização."></textarea>
+
+                </p>
+            </fieldset>
+            <fieldset id="termoadocao">
+                <legend>Antes de enviar o formulário...</legend>
+                <p>Leia nosso termo de adoção</p>
+                <a href="documentos/#" download="termoadoao.pdf">Click para baixar</a>
+
+                <p>Estou de acordo? <input type="radio" name="choice" id="sim" value="sim">Sim<input type="radio"
+                        name="choice" id="nao" value="nao">Não</p>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+        <!--Outras informações-->
+        <section>
+            <p>Atendimento: atendimento4patas@outlook.com • (0XX) 99999-9999 / (0XX) 88888-8888</p>
+        </section>
+        <!--Rodapé-->
+        <footer class="rodape">
+            <p class="copyright">
+                Copyright &#0169 Amor4Patas 2021.
+            </p>
+        </footer>
+</body>
+
+</html>
