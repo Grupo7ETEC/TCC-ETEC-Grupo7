@@ -58,7 +58,7 @@
     text-align: center; 
     color:#fff; 
     border-radius:56px;
-     cursor: pointer;
+    cursor: pointer;
     background: linear-gradient(to right,#ff007f,#88ff00)
 }
 /*MENU*/
@@ -67,32 +67,34 @@
     width: 100%; 
     height:100%;
     position: fixed;
-    background-color: rgba(87, 134, 25, 0.9); 
-    top: 0; 
-    left: 0;
+    background: rgba(87, 134, 25, 0.9); 
+    padding: 18px 8px;
 }
 .btn-fechar {
     font-size: 1.5em; 
     color:#fff; 
     float: right; 
     cursor: pointer;
-     margin:2%  3% 0 0;
+    margin:2%  3% 0 0;
     }
 .menu ul{ 
     width: 100%;
-     float: left;
-      text-align: center;
+    float: left;
+    text-align: center;
+    background-color:#c5c6d0;
+    font-size: 1.5em;
     }
 .menu li {
     padding: 1.5%;
 }
 .menu li a {
-    font-size: 2em; 
+    font-size: 1.5em; 
     color:#fff; 
     padding: 1.5% 3%;
 }
 .menu li a:hover {
     border:1px solid #88ff00;
+    color: #130400;
 }
 @media screen and (min-width: 1280px) {
     .btn-menu {display: none;}
@@ -160,3 +162,6 @@ figcaption {
         padding: 2px;
         text-align: left;
       }
+main {
+    clear: both;
+}
