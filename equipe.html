@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipe</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:400,300,700" rel="stylesheet" type="text.css">
     <link rel="stylesheet" href="estilos.css">
 
 </head>
@@ -39,13 +41,29 @@
             voluptatibus aliquid eaque porro provident?</p>
         <!--Outras informações-->
         <section>
-            <p>Atendimento: atendimento4patas@outlook.com • (0XX) 99999-9999 / (0XX) 88888-8888</p>
-        </section>
+            <h3>Contatos</h3>
+              <ul>
+                  <li><i class="fa fa-phone fa-lg "></i> (11)0000-9098</li>
+                  <li><i class="fa fa-whatsapp fa-lg"></i>(11)9 0000-0000</li>
+                  <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
+              </ul>
+          </section>
+          <!--RODAPÉ-->
         <footer class="rodape">
             <p class="copyright">
                 Copyright &#0169 Amor4Patas 2021.
             </p>
         </footer>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js">
+        </script>
+        <script>
+            $(".btn-menu").click(function () {
+                $(".menu").show();
+            })
+            $(".btn-fechar").click(function () {
+                $(".menu").hide();
+            })
+        </script>
 </body>
 
 </html>

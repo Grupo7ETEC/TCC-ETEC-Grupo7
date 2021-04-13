@@ -21,6 +21,17 @@
     img {
         max-width: 100%;
     }
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-family: sans-serif;
+    }
+
 /*CABEÇALHO*/
 .cabecalho {
     width: 100%;
@@ -100,21 +111,27 @@
     text-align: center;
     background: linear-gradient(to right,#ff007f,#88ff00);
  }
-.social-icons a {font-size: 1.5em;
-     color: rgba(255, 255,255, 0.7);
-      margin-right: 3%;
-    }
-.social-icons a:hover {
-    color: rgb(255, 255, 255);
+.social-icons a {
+    font-size: 1.5em;
+    color:rgba(255, 255,255, 0.7);
+    margin-right: 3%; 
+    float:center;
 }
-.social-icons a:last-child {
-    margin-right: 0;
+
+.btn-facebook:hover {
+    color: #3b5998;
+}
+.btn-instagram:hover {
+    color: #3f729b;
+}
+.btn-youtube:hover {
+    color:#c4302b;
 }
 .copyright {
     margin-top: 2%; 
     color:rgba(255, 255,255, 0.7);
 }
-/*Section*/
+/*SECTION*/
 section {
     clear: both;
 	background-color: #c5c6d0;
@@ -122,6 +139,9 @@ section {
 	text-align: center;
 	padding: 10px;
 	}
-section p {
- margin: 0px;   
+
+section li{
+    color:#777; margin-bottom: 10px;
 }
+section i {
+    margin-right: 5px;}

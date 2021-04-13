@@ -11,17 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:400,300,700" rel="stylesheet" type="text.css">
     <link rel="stylesheet" href="estilos.css">
     <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-            font-family: sans-serif;
-        }
-
+       
         p {
             font-size: 1.2em;
             text-align: left;
@@ -64,6 +54,7 @@
 </head>
 
 <body>
+    
     <header class="cabecalho">
         <a href="index.html">
             <h1 class="logo">&hearts;4Patas</h1>
@@ -73,11 +64,10 @@
             <a class="btn-fechar"><i class="fa fa-times"></i></a>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Parceiros</a></li>
                 <li><a href="#">Adote</a></li>
-                <li><a href="#">Animais</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#">Animais</a></li>              
                 <li><a href="#">Notícias</a></li>
+                <li><a href="#">Parceiros</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Quem Somos</a></li>
             </ul>
@@ -106,7 +96,7 @@
                         maxlength="9" placeholder="XXXXX-XXX" class="w3-input" /></p>
                 <p><label for="email" class="w3-text-pink">Email:</label><input type="email" name="email" id="email"
                         size="80" maxlength="60" placeholder="Digite um email válido." class="w3-input "></p>
-                <p><label for="tel" class="w3-text-pink">Tel./Cel.:</label><input type="tel" name="tel" id="tel"
+                <p><label for="tel" class="w3-text-pink">Tel./Cel.:</label><input type="text" name="tel" id="tel"
                         size="12" maxlength="13" placeholder="00 00000-0000" class="w3-input"></p>
                 <p>Quando podemos entrar em contato com você?
                     <input type="checkbox" name="semana" value="idsegunda" id="idsegunda" class="w3-check" />
@@ -177,15 +167,19 @@
     </main>
     <!--Outras informações-->
     <section class="contato">
-        <p>Atendimento: atendimento4patas@outlook.com • &phone; (0XX) 99999-9999 / (0XX) 88888-8888</p>
+        <h2>Contatos</h2>
+        <ul>
+            <li><i class="fa fa-phone fa-lg"></i> (11)0000-9098</li>
+            <li><i class="fa fa-whatsapp fa-lg"></i>(11)9 0000-0000</li>
+            <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
+        </ul>
     </section>
 
     <!--Rodapé-->
     <footer class="rodape">
         <div class="social-icons">
             <a href="#" class="btn-facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="btn-twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="btn-google"><i class="fa fa-google"></i></a>
+            <a href="#" class="btn-youtube"><i class="fa fa-youtube"></i></a>
             <a href="#" class="btn-instagram"><i class="fa fa-instagram"></i></a>
         </div>
         <p class="copyright">
