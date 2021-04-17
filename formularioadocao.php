@@ -13,5 +13,6 @@
         $username = "root";
         $password = "usbw";
         $dbname = "abrigo"; 
+?>
 </body>
 </html>
