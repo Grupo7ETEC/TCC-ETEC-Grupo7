@@ -42,7 +42,6 @@
     width: 100%;
      float: left; 
      padding: 3% 4%;
-    background: linear-gradient(to right,#ff007f,#88ff00)
     }
 .logo {
     width: 56px; 
@@ -81,8 +80,7 @@
     width: 100%;
     float: left;
     text-align: center;
-    background-color:#c5c6d0;
-    font-size: 1.5em;
+    font-size: 1em;
     }
 .menu li {
     padding: 1.5%;

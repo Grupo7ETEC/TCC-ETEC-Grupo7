@@ -12,7 +12,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "usbw";
-        $dbname = "abrigo"; 
+        $dbname = "#"; 
 ?>
 </body>
 </html>
