@@ -32,6 +32,7 @@
             padding: 8px;
             margin-left: 8px;
             border-radius: 8px;
+            background: linear-gradient(to right,#007fff,#00BFFF)
         }
 
         input[type="submit"] {
@@ -41,6 +42,7 @@
             padding: 10px 30px;
             margin: 20px 0;
             cursor: pointer;
+            background: linear-gradient(to right,#007fff,#00BFFF)
         }
 
         input#nome,
@@ -86,7 +88,7 @@
         <form method="POST" id="contato" class="w3-container" action="obrigado.html">
 
             <fieldset id="id_adotante">
-                <legend class="w3-lime">
+                <legend>
                     <h3>Identificação do Adotante</h3>
                 </legend>
                 <p><label for="nome" class="w3-text-pink">Nome:</label> <input type="text" name="nome" id="nome"
@@ -100,30 +102,30 @@
                         size="80" maxlength="60" placeholder="Digite um email válido." class="w3-input "></p>
                 <p><label for="tel" class="w3-text-pink">Tel./Cel.:</label><input type="text" name="tel" id="tel"
                         size="12" maxlength="13" placeholder="00 00000-0000" class="w3-input"></p>
-                <p>Quando podemos entrar em contato com você?
+                <p>Quando podemos entrar em contato com você?<br>
                     <input type="checkbox" name="semana" value="idsegunda" id="idsegunda" class="w3-check" />
-                    <label for="idsegunda" class="labelSimples">Segunda-feira</label>
+                    <label for="idsegunda" class="labelSimples">Segunda-feira</label><br>
                     <input type="checkbox" name="semana" value="idterca" id="idterca" class="w3-check" />
-                    <label for="idterca" class="labelSimples">Terça-feira</label>
+                    <label for="idterca" class="labelSimples">Terça-feira</label><br>
                     <input type="checkbox" name="semana" value="idquarta" id="idquarta" class="w3-check" />
-                    <label for="idquarta" class="labelSimples">Quarta-feira </label>
+                    <label for="idquarta" class="labelSimples">Quarta-feira </label><br>
                     <input type="checkbox" name="semana" value="idquinta" id="idquinta" class="w3-check" />
-                    <label for="idquinta" class="labelSimples">Quinta-feira</label>
+                    <label for="idquinta" class="labelSimples">Quinta-feira</label><br>
                     <input type="checkbox" name="semana" value="idsexta" id="idsexta" class="w3-check" />
-                    <label for="idsexta" class="labelSimples">Sexta-feira</label>
+                    <label for="idsexta" class="labelSimples">Sexta-feira</label><br>
                     <input type="checkbox" name="semana" value="idsabado" id="idsabado" class="w3-check" />
-                    <label for="idsabado" class="labelSimples">Sábado</label>
+                    <label for="idsabado" class="labelSimples">Sábado</label><br>
                     <input type="checkbox" name="s_email" value="s_email" id="s_email" class="w3-check">
-                    <label for="s_email" class="labelSimples">Prefiro por email</label>
+                    <label for="s_email" class="labelSimples">Prefiro por email</label><br>
                 </p>
-                <p>Qual o melhor horário?
-                    <textarea name="hr" id="hr" cols="15" rows="5"
+                <p><b>Qual o melhor horário?</b>
+                    <textarea name="hr" id="hr" cols="40" rows="3"
                         placeholder="Digite o melhor horário para entrarmos em contato"></textarea>
                 </p>
             </fieldset>
 
             <fieldset id="id_animal">
-                <legend class="w3-lime">
+                <legend>
                     <h3>Meu novo Pet</h3>
                 </legend>
                 <p><label for="nom_animal" class="w3-text-pink">Nome:</label><input type="text" name="nom_animal"
@@ -135,7 +137,7 @@
                     <input type="radio" name="tipo" id="gato" value="gato" checked>
                     <label for="gato" class="labelSimples" class="w3-check">Gato</label>
                 </p>
-                <p> Ainda não escolhi:
+                <p> <b>Ainda não escolhi:</b>
                     <select name="duvida" id="duvida">
                         <option value="">Nenhum item selecionado.</option>
                         <option value="visita">Quero fazer uma visita.</option>
@@ -143,15 +145,15 @@
                         <option value="adotar">Quero adotar mais.</option>
                     </select>
                 </p>
-                <p> Preciso de ajuda:
-                    <textarea name="ajuda" id="ajuda" cols="100" rows="10"
+                <p> <b>Preciso de ajuda:</b>
+                    <textarea name="ajuda" id="ajuda" cols="50" rows="5"
                         placeholder="Digite mais informações sobre o que você procura ou dúvidas sobre os animais e nossa organização."></textarea>
 
                 </p>
             </fieldset>
 
             <fieldset id="termoadocao">
-                <legend class="w3-lime">
+                <legend>
                     <h3>Antes de enviar o formulário...</h3>
                 </legend>
                 <p>Leia nosso termo de adoção</p>
@@ -166,7 +168,7 @@
                     <label for="nao" class="labelSimples">Não</label>
                 </p>
             </fieldset>
-            <input type="submit" value="Enviar" id="btn-enviar" class="w3-btn w3-lime">
+            <input type="submit" value="Enviar" id="btn-enviar" class="w3-btn">
         </form>
     </main>
     <!--Outras informações-->
