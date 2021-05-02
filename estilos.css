@@ -39,14 +39,14 @@
 /*CABEÇALHO*/
 .cabecalho {
     width: 100%;
-     float: left; 
-     padding: 3% 4%;
+    float: left; 
+    padding: 10px;
     }
 .logo {
-    width: 56px; 
+    width: 100%; 
     height: 56px; 
     float: left;
-    background:url()center center/56px no-repeat;
+    background:url(logos/logo.jpg)center center/56px no-repeat;
     font-size: 0;
 }
 /*MENU*/
@@ -135,14 +135,16 @@
 .rodape {
     width: 100%; 
     float: left;
-    padding: 3% 4%; 
     background: linear-gradient(to right,#007fff,#000080);
+    padding: 10px;
+    border-top: 7px solid #999;  
  }
 .social-icons a {
     font-size: 2em;
     color:rgba(255, 255,255, 0.7);
     margin-right: 3%; 
     float:left;
+    padding: 10px;
 }
 
 .btn-facebook:hover {
@@ -158,6 +160,7 @@
     margin-top:1%; 
     color:rgba(255, 255,255, 0.7);
     text-align: right;
+    padding: 10px;
 }
 /*SECTION*/
 section {
@@ -165,7 +168,8 @@ section {
 	background-color: #e6e9f3;
 	color: black;
 	text-align: center;
-	padding: 9px;
+	padding: auto;
+    border-top: 7px solid #999;
 	}
 
 section li{
