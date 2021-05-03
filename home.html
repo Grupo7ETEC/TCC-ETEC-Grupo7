@@ -118,6 +118,22 @@
                       <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
                       <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
                     </div>
+                    <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Muda a cada 2 segundos.
+                    }
+                     </script>
                 </div>               
 
                 <!-- <img src="logos/logo.jpg" alt="Amor de quatro patas." class="w3-image" width="40%"> -->
