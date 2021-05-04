@@ -1,3 +1,8 @@
+<?php
+    include("cabecalho.php");
+<?
+
+<!-- ESTÁ INCLUSO NO CABEÇALHO
 <!DOCTYPE html>
 <html lang="pt_br">
 
@@ -11,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:400,300,700" rel="stylesheet" 
     type="text.css">
     <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css"> -->
     <style>
          #main {
             margin-left: 120px
@@ -49,7 +54,7 @@
         
       </style>
 
-</head>
+<!-- </head>
 
 <body class="w3-white">    
     <div class="w3-center">
@@ -101,9 +106,10 @@
                         <p>Seja Voluntário</p>
                     </a>                    
         </nav>
-    </div>
+    </div> -->
 
     <!--Início do conteúdo-->
+<body class="w3-white">
     <div class="row">
         <div class="col-md-12">
             <div id="caixas" class="w3-container w3-center">
@@ -203,7 +209,7 @@
             <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
         </ul>
     </section>
-    <!--Rodapé-->
+    <!--Rodapé
     <footer class="rodape">
         <div class="social-icons">
             <a href="#" class="btn-facebook"><i class="fa fa-facebook"></i></a>
@@ -223,7 +229,7 @@
         $(".btn-fechar").click(function () {
             $(".menu").hide();
         })
-    </script>
+    </script> -->
     <!--Slides-->
     <script>
         var slideIndex = 1;
@@ -253,6 +259,10 @@
         dots[slideIndex-1].className += " w3-white";
         }
     </script>
+
+<?php
+    include("rodape.php");
+?>
 </body>
 
 </html>
