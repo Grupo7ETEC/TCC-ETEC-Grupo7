@@ -259,10 +259,9 @@
         dots[slideIndex-1].className += " w3-white";
         }
     </script>
+        
+</body>
 
 <?php
     include("rodape.php");
 ?>
-</body>
-
-</html>
