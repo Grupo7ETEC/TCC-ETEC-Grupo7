@@ -29,13 +29,7 @@
 
     input[type=submit]:hover {
         background-color: darkgreen;
-    }
-    
-    div {
-        border-radius: 5px;
-        background-color: white;
-        padding: 20px;
-    }
+    }      
 
     .center {
         margin: auto;
@@ -45,11 +39,11 @@
 </style>
 
 <body class="w3-white">
-    <div class="banner">
+    <div class="banner" style="border-radius: 5px; background-color: white; padding: 20px;">
         <h2>Cadastro de animais para adoção</h2>
     </div>
 
-    <div class="center">
+    <div class="center" style="border-radius: 5px; background-color: white; padding: 20px;">
         <form action="cadastropet_action.php" method="post" enctype="multipart/form-data">
           <label for="nome">Nome</label><br>
           <input type="text" id="nome" name="nome" placeholder="Digite o nome do animal" required>
