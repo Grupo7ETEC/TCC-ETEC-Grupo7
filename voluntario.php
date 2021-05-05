@@ -24,7 +24,7 @@
         <a href="formulariovoluntario.html">
             <button class="w3-btn w3-center w3-green w3-round w3-sans-serif w3-xlarge">Quero ser voluntário!</button></a>
     </div>
-
+</body>
 <?php
     include("rodape.php");
 ?>
