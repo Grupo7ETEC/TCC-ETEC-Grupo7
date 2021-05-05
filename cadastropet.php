@@ -2,6 +2,8 @@
     include("cabecalho.php");
 ?>
 
+<title>Cadastro de animais</title>
+
 <style>
     input[type=text], select {
         width: 100%;
