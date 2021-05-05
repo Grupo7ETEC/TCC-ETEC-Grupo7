@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt_br">
+ <?php
+        include("cabecalho.php");
+ ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>animais</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:400,300,700" rel="stylesheet" 
-    type="text.css">
-    <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
+<title>Animais</title>
+
     <style>
         /*BOTÕES*/
         button {
@@ -31,29 +23,8 @@
         
       </style>
 
-</head>
-
 <body>
-    <header class="cabecalho">
-        <a href="index.html" class="logo"></a>
-        <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
-    <nav class="menu">
-        <a class="btn-fechar"><i class="fa fa-times"></i></a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="formularioadocao.html">Adote</a></li>
-            <li><a href="animais.html">Animais</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="doe.html">Doe</a></li>
-            <li><a href="noticias.html">Notícias</a></li>
-            <li><a href="#">Parceiros</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="formulariovoluntario.html">Seja Voluntário</a></li>
-        </ul>
-    </nav>
-    </header>
+    
     <div class="banner">
         <h2>A razão de existirmos!</h2>
         <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil vitae dolore
@@ -204,17 +175,7 @@
             <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
         </ul>
     </section>
-    <!--Rodapé-->
-    <footer class="rodape">
-        <div class="social-icons">
-            <a href="#" class="btn-facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="btn-youtube"><i class="fa fa-youtube"></i></a>
-            <a href="#" class="btn-instagram"><i class="fa fa-instagram"></i></a>
-        </div>
-        <p class="copyright">
-            Copyright &#0169 &#x2764;&#128062;&#128062; 2021.
-        </p>
-    </footer>
+   
     <script src="http://code.jquery.com/jquery-1.12.0.min.js">
     </script>
     <script>
@@ -227,4 +188,6 @@
     </script>
 </body>
 
-</html>
+ <?php
+        include("rodape.php");
+ ?>
