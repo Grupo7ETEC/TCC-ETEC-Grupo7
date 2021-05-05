@@ -81,18 +81,6 @@
         </form>
       </div>
     
-<script src="http://code.jquery.com/jquery-1.12.0.min.js">
-</script>
-
-<script>
-    $(".btn-menu").click(function () {
-        $(".menu").show();
-    })
-    $(".btn-fechar").click(function () {
-        $(".menu").hide();
-    })
-</script>
-
 </body>
 
 <?php
