@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="estilos.css">
-        <title>Cadastro de animais para adoção</title>
-    </head>
+<?php
+    include("cabecalho.php");
+?>
+
 <style>
     input[type=text], select {
         width: 100%;
@@ -22,8 +15,9 @@
 
     input[type=submit] {
         width: 100%;
-        background-color: lightseagreen;
+        background-color: green;
         color: white;
+        font-weight: bold;
         padding: 14px 20px;
         margin: 8px 0;
         border: none;
@@ -32,7 +26,7 @@
     }
 
     input[type=submit]:hover {
-        background-color: seagreen;
+        background-color: darkgreen;
     }
     
     div {
@@ -48,9 +42,10 @@
     }
 </style>
 
-<body>
-
-    <h3 style="text-align: center">Cadastro de animais para adoção</h3>
+<body class="w3-white">
+    <div class="banner">
+        <h2>Cadastro de animais para adoção</h2>
+    </div>
 
     <div class="center">
         <form action="cadastropet_action.php" method="post" enctype="multipart/form-data">
@@ -82,16 +77,28 @@
           <input type="text" id="obs" name="obs"><br>
           <br>
           <label for="foto1">Insira uma foto:</label><br>
+          <br>
           <input type="file" id="foto1" name="foto1"><br>
           <br>
          
           <input type="submit" value="Cadastrar">
         </form>
       </div>
-      <footer class="rodape">
-        <p class="copyright">
-            Copyright &#0169 &#x2764;&#128062;&#128062; 2021.
-        </p>
-    </footer>
+    
+<script src="http://code.jquery.com/jquery-1.12.0.min.js">
+</script>
+
+<script>
+    $(".btn-menu").click(function () {
+        $(".menu").show();
+    })
+    $(".btn-fechar").click(function () {
+        $(".menu").hide();
+    })
+</script>
+
 </body>
-</html>
+
+<?php
+    include("rodape.php");
+?>   
