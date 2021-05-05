@@ -1,22 +1,6 @@
 <?php
     include("cabecalho.php");
 <?
-
-<!-- ESTÁ INCLUSO NO CABEÇALHO
-<!DOCTYPE html>
-<html lang="pt_br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:400,300,700" rel="stylesheet" 
-    type="text.css">
-    <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css"> -->
     <style>
          #main {
             margin-left: 120px
@@ -200,7 +184,7 @@
         </div>
     </div>
     
-    <!--Outras informações-->
+    <!--Outras informações
     <section>
         <h2>Contatos</h2>
         <ul>
@@ -208,28 +192,8 @@
             <li><i class="fa fa-whatsapp fa-lg"></i>(11)9 0000-0000</li>
             <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
         </ul>
-    </section>
-    <!--Rodapé
-    <footer class="rodape">
-        <div class="social-icons">
-            <a href="#" class="btn-facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="btn-youtube"><i class="fa fa-youtube"></i></a>
-            <a href="#" class="btn-instagram"><i class="fa fa-instagram"></i></a>
-        </div>
-        <p class="copyright">
-            Copyright &#0169 &#x2764;&#128062;&#128062; 2021.
-        </p>
-    </footer>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js">
-    </script>
-    <script>
-        $(".btn-menu").click(function () {
-            $(".menu").show();
-        })
-        $(".btn-fechar").click(function () {
-            $(".menu").hide();
-        })
-    </script> -->
+    </section>-->
+   
     <!--Slides-->
     <script>
         var slideIndex = 1;
