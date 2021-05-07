@@ -42,7 +42,7 @@
         input#email,
         input#endereco,
         input#tel,
-        input#cep,
+        input#cep
          {
             font-size: 1.2em;
         }

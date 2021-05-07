@@ -1,6 +1,6 @@
 <?php
     include("cabecalho.php");
-<?
+?>
     <style>
          #main {
             margin-left: 120px
