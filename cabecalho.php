@@ -42,18 +42,18 @@
                         <i class="	fa fa-thumbs-o-up w3-xlarge"></i>
                         <p>Parceiros</p>
                     </a>
-                    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
+                    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="fa fa-user w3-xlarge"></i>
                         <p>Produtos</p>
-                    </a> -->
+                    </a> 
                     <a href="equipe.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="fa fa-group w3-xlarge"></i>
                         <p>Equipe</p>
                     </a>
-                    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
+                  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="	fa fa-question w3-xlarge"></i>
                         <p>Quem Somos</p>
-                    </a> -->
+                    </a> 
                     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="fa fa-user w3-xlarge"></i>
                         <p>Seja Voluntário</p>
