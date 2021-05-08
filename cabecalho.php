@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-
+<?php
+    include("cabecalho.php");
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:400,300,700" rel="stylesheet" 
-    type="text.css">
-    <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
     </head>
 
@@ -20,7 +18,7 @@
 
                     <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="fa fa-home w3-xlarge"></i>
-                        <p>HOME</p>
+                        <p>Home</p>
                     </a>
                     <a href="formularioadocao.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="fa fa-heart-o w3-xlarge"></i>
