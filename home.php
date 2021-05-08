@@ -47,7 +47,7 @@
 
                     <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="fa fa-home w3-xlarge"></i>
-                        <p>HOME</p>
+                        <p>Home</p>
                     </a>
                     <a href="formularioadocao.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-white w3-text-black">
                         <i class="fa fa-heart-o w3-xlarge"></i>
