@@ -1,11 +1,14 @@
 <?php
-    include("cabecalho.php");
+include('verificalogin.php');
+
+include("cabecalho.php");
 ?>
 
 <title>Cadastro de animais</title>
 
-<style>
-    input[type=text], select {
+    <style>
+     
+        input[type=text], select {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -17,7 +20,7 @@
 
     input[type=submit] {
         width: 100%;
-        background-color: green;
+        background-color: blue;
         color: white;
         font-weight: bold;
         padding: 14px 20px;
@@ -28,21 +31,26 @@
     }
 
     input[type=submit]:hover {
-        background-color: darkgreen;
-    }      
-
+        background-color: darkblue;
+    }
+    
     .center {
         margin: auto;
         width: 60%;
         padding: 10px;
     }
-</style>
+    
+    </style>
 
-<body class="w3-white">
-    <div class="banner" style="border-radius: 5px; background-color: white; padding: 20px;">
-        <h2>Cadastro de animais para adoção</h2>
+<body class="w3-white">  
+
+    <div class="w3-center" style="border-radius: 5px; background-color: white; padding: 20px;"> 
+        <div class="w3-button w3-red w3-center w3-margin-bottom">
+            <p><a href="logout.php">Sair</a></p>
+        </div>  
+        
+        <h2>Cadastro de animais para adoção</h2>        
     </div>
-
     <div class="center" style="border-radius: 5px; background-color: white; padding: 20px;">
         <form action="cadastropet_action.php" method="post" enctype="multipart/form-data">
           <label for="nome">Nome</label><br>
@@ -80,9 +88,9 @@
           <input type="submit" value="Cadastrar">
         </form>
       </div>
-    
+
 </body>
 
 <?php
     include("rodape.php");
-?>   
+?>
