@@ -101,7 +101,7 @@
                     <h3>Antes de enviar o formulário...</h3>
                 </legend>
                 <p>Leia nosso termo de Compromisso</p>
-                <a href="documento/Termo_Voluntario.docx" download="termoadoao.pdf">Click para baixar</a>
+                <a href="documento/Termo_Voluntario.docx" download="Termo_Voluntario.docx">Click para baixar</a>
                 <p>Documentos para Adesão</p>
                 <a href="documento/Documentos para Adesão.pdf" download="termoadoao.pdf">Click para baixar</a>
 
