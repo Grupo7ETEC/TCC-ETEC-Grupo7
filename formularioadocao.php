@@ -159,5 +159,3 @@
 <?php 
     include("rodape.php");
 ?>
-
-</html>
