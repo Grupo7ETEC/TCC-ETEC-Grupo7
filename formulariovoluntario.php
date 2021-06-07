@@ -1,14 +1,31 @@
-<?php 
-    include("cabecalho.php");
-?>
+    <?php
+        include("cabecalho.php");
+    ?>
 
-<title>Formulário Voluntário</title>
+    <title>Formulário Voluntário</title>
+    
+    <style>       
+         body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a        {
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
 
-    <style>
-       
-        p {
-            font-size: 1.2em;
-            text-align: left;
+        b{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-weight:bold;
+        }
+
+        label  {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size:1.2em;
+            font-weight:bold;           
         }
 
         fieldset {
@@ -25,7 +42,6 @@
             padding: 8px;
             margin-left: 8px;
             border-radius: 8px;
-            background: linear-gradient(to right,#007fff,#00BFFF)
         }
 
         input[type="submit"] {
@@ -35,46 +51,58 @@
             padding: 10px 30px;
             margin: 20px 0;
             cursor: pointer;
-            background: linear-gradient(to right,#007fff,#00BFFF)
+            font-weight:bold;
+            font-family: 'Montserrat Alternates', sans-serif;
         }
 
         input#nome,
         input#email,
         input#endereco,
         input#tel,
-        input#cep
-         {
+        input#cep,
+        input#nom_animal,
+        input#contato,
+        input#horario {
             font-size: 1.2em;
         }
     </style>
 
-<body>  
-    <div class="banner">
-        <h2>Seja Voluntário</h2>
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil vitae dolore
-            nostrum atque accusamus ullam doloremque, quia possimus hic.
-            Quas sapiente ad saepe quibusdam quo voluptatum, quam iste error provident?</h3>
+<body class="bg">
+    <div class="banner w3-round-xlarge">
+        <h2 style="font-weight:bold">Seja Voluntário</h2>
+        <h4>Para ser um voluntário em nosso projeto, basta se cadastrar no formulário abaixo.<br> Entraremos em contato quando necessário, e você sempre poderá decidir se quer participar ou não da atividade.<br> Agradecemos seu interesse e disposição!</h4>
     </div>
+
     <!--Formulário-->
     <main>
-        <form method="POST" id="contato" class="w3-container" action="obrigado.html">
+        <form method="POST" id="contato" class="w3-container" action="voluntario_action.php">
 
             <fieldset id="id_voluntário">
-                <legend>
+                <legend class="w3-indigo">
                     <h3>Identificação do Voluntário</h3>
                 </legend>
-                <p><label for="nome" class="w3-text-pink">Nome:</label> <input type="text" name="nome" id="nome"
-                        size="50" maxlength="100" placeholder="Digite o nome completo." class="w3-input" />
+                <p> <label for="nome" class="w3-text-pink">Nome:</label> 
+                    <input type="text" name="vnome" id="vnome" size="50" maxlength="100" placeholder="Digite o nome completo." class="w3-input" />
                 </p>
-                <p><label for="endereco" class="w3-text-pink">Endereço:</label> <input type="text" name="endereco"
-                        id="endereco" size="80" maxlength="60" placeholder="Digite o endereço." class="w3-input" /></p>
-                <p><label for="cep" class="w3-text-pink">CEP:</label><input type="text" name="cep" id="cep" size="10"
-                        maxlength="9" placeholder="XXXXX-XXX" class="w3-input" /></p>
-                <p><label for="email" class="w3-text-pink">Email:</label><input type="email" name="email" id="email"
-                        size="80" maxlength="60" placeholder="Digite um email válido." class="w3-input "></p>
-                <p><label for="tel" class="w3-text-pink">Tel./Cel.:</label><input type="text" name="tel" id="tel"
-                        size="12" maxlength="13" placeholder="00 00000-0000" class="w3-input"></p>
-                <p>Quando podemos entrar em contato com você?<br>
+                <p> <label for="endereco" class="w3-text-pink">Endereço:</label> 
+                    <input type="text" name="vendereco" id="vendereco" size="80" maxlength="60" placeholder="Digite o endereço." class="w3-input" />
+                </p>
+                <p> <label for="cep" class="w3-text-pink">CEP:</label>
+                    <input type="text" name="vcep" id="vcep" size="10" maxlength="9" placeholder="XXXXX-XXX" class="w3-input"/>
+                </p>
+                <p> <label for="email" class="w3-text-pink">Email:</label>
+                    <input type="email" name="vemail" id="vemail" size="80" maxlength="60" placeholder="Digite um email válido." class="w3-input ">
+                </p>
+                <p> <label for="tel" class="w3-text-pink">Tel./Cel.:</label>
+                    <input type="text" name="vtelefone" id="vtelefone" size="12" maxlength="13" placeholder="00 00000-0000" class="w3-input">
+                </p>
+                <p><label for="dia" class="w3-text-pink">Quando podemos entrar em contato com você?</label> 
+                    <input type="text" name="vdia" id="vdia"  maxlength="100" placeholder="Digite o dia da semana." class="w3-input"/>
+                </p>
+                <p><label for="horario" class="w3-text-pink">Qual o melhor horário?</label>
+                    <input type="text" name="vhorario" id="vhorario" maxlength="100" placeholder="Manhã, tarde ou noite." class="w3-input"/>
+                </p> 
+               <!-- <p>Quando podemos entrar em contato com você?<br>
                     <input type="checkbox" name="semana" value="idsegunda" id="idsegunda" class="w3-check" />
                     <label for="idsegunda" class="labelSimples">Segunda-feira</label><br>
                     <input type="checkbox" name="semana" value="idterca" id="idterca" class="w3-check" />
@@ -93,16 +121,16 @@
                 <p><b>Qual o melhor horário?</b>
                     <textarea name="hr" id="hr" cols="40" rows="3"
                         placeholder="Digite o melhor horário para entrarmos em contato"></textarea>
-                </p>
+                </p> -->
             </fieldset>
 
-            <fieldset id="termoadocao">
-                <legend>
+            <fieldset id="termoadesao">
+                <legend class="w3-indigo">
                     <h3>Antes de enviar o formulário...</h3>
                 </legend>
-                <p>Leia nosso termo de Compromisso</p>
-                <a href="documento/Termo_Voluntario.docx" download="Termo_Voluntario.docx">Click para baixar</a>
-                <p>Documentos para Adesão</p>
+                <p style="font-size: 1.2em">Leia o Termo de Adesão ao Serviço Voluntário:</p><br>
+                <a style="font-weight:bold; font-size:1.2em" href="documento/Termo_Voluntario.docx" download="Termo_Voluntario.docx">Clique para baixar</a><br>
+                <!--<p>Documentos para Adesão</p>
                 <a href="documento/Documentos para Adesão.pdf" download="termoadoao.pdf">Click para baixar</a>
 
                 <p>Estou de acordo?
@@ -110,12 +138,16 @@
                     <label for="sim" class="labelSimples">Sim</label>
                     <input type="radio" name="choice" id="nao" value="nao" checked>
                     <label for="nao" class="labelSimples">Não</label>
-                </p>
+                </p>-->
+                <br>
+                <p><input type="checkbox" name="termook" value="" id="termook" class="w3-check" required/>
+                <label for="termook" class="labelSimples">Declaro que li e estou de acordo com o Termo de Adesão ao Serviço Voluntário.</label></p>
+
             </fieldset>
-            <input type="submit" value="Enviar" id="btn-enviar" class="w3-btn">
+            <input type="submit" value="Enviar" id="btn-enviar" class="w3-btn w3-indigo w3-margin-left">
         </form>
     </main>
-    <!--Outras informações-->
+    <!--Outras informações
     <section class="contato">
         <h2>Contatos</h2>
         <ul>
@@ -123,20 +155,10 @@
             <li><i class="fa fa-whatsapp fa-lg"></i>(11)9 0000-0000</li>
             <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
         </ul>
-    </section>
-   
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js">
-    </script>
-    <script>
-        $(".btn-menu").click(function () {
-            $(".menu").show();
-        })
-        $(".btn-fechar").click(function () {
-            $(".menu").hide();
-        })
-    </script>
+    </section>-->
+
 </body>
 
-<?php 
+<?php
     include("rodape.php");
 ?>

@@ -1,125 +1,117 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-    <?php
-    include("cabecalho.php");
+<?php
+    include ("cabecalho.php");
 ?>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipe</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:400,300,700" rel="stylesheet" type="text.css">
-    <link rel="stylesheet" href="estilos.css">
 
-    <style>
-        main img {
-            float: left;
-            margin: 30px 30px 30px 30px;
-            padding: 10px;
-            width: 30%;
-            height: auto;
-        }
-
+<style>
+     body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
         p,
-        h2 {
-            text-align: justify;
-            font-size: 20px;
-            margin: 30px;
+        a {
+            font-family: 'Montserrat Alternates', sans-serif;
         }
 
-        main {
-            background-color: white;
-            margin: 30px;
+        .textos {
+            font-size: 18px;
         }
-    </style>
-</head>
 
-<body>
+        
+</style>
 
-    <div class="banner">
-        <h2>Nossa Missão</h2>
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil vitae dolore
-            nostrum atque accusamus ullam doloremque, quia possimus hic.
-            Quas sapiente ad saepe quibusdam quo voluptatum, quam iste error provident?</h3>
-    </div>
-    <!--Conteúdo-->
-    <main>
-
-        <div class="w3-container w3-center">
-            <h1 style="color: darkblue;"> Conheça nossa equipe</h1>
+<body class="bg">    
+        <!--Conteúdo-->
+        <main>   
+        <div class="banner w3-round-xlarge">
+        <h2 style="font-weight: bold">Conheça nossa equipe</h2>
+        <h4>Somos uma grande equipe que ama os animais e cada um ajuda no que pode. Somos todos voluntários e apaixonados por nosso trabalho!</h4>
         </div>
-        <img src="equipe/equipe.jpg" alt="Foto da Equipe">
-        <p style="color:darkblue">Em que nós acreditamos</p>
-        <p>Na Amor de 4 patas, o nosso sucesso é medido pelo amor em cuidar dos animais.</p>
 
-        <p>Cras semper magna in velit tempus tristique quis non lorem. Mauris vitae fringilla sapien, sed volutpat elit.
-            Fusce molestie euismod odio, ut blandit nulla bibendum ac. Fusce posuere turpis sed sem tincidunt, sed
-            auctor tellus faucibus. Proin ultrices enim vitae ipsum luctus, sed malesuada orci ornare. Vivamus eget
-            molestie magna, sed aliquam risus. Aliquam adipiscing laoreet felis, eget tincidunt purus sollicitudin sit
-            amet. Nulla facilisi.</p>
-        <p>Donec dapibus nibh eu ipsum elementum, non consectetur massa facilisis. Nam commodo at leo non commodo. In
-            blandit arcu sit amet sem convallis, rutrum gravida quam elementum. Cras accumsan orci vel lectus blandit,
-            at dictum tellus rhoncus. Etiam vitae urna nec leo facilisis auctor a quis lorem. Integer dolor urna, luctus
-            quis consequat vitae, vestibulum non lectus. In turpis mi, tincidunt non iaculis ac, feugiat eget purus.
-        </p>
-        <hr>
-        <img src="equipe/veterinarios.JPG" alt="veterinários">
+        <div class="w3-row w3-center w3-padding-16">
 
-        <h2 style="color:darkblue">Animais bem cuidados.<h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempus justo, nec sagittis enim.
-                Vestibulum eget augue dui. Vestibulum consequat pretium lectus vitae varius. Etiam facilisis quam et
-                nulla
-                posuere feugiat. Quisque eu augue mi. </p>
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <div class="w3-padding">
+                </div>                 
+            </div> 
 
-                <p>Vivamus sagittis metus tortor, vitae vehicula mauris interdum id. Maecenas nulla velit, posuere in
-                    pharetra
-                    eu, lacinia non est. Nunc eleifend dignissim arcu et facilisis. Cras luctus scelerisque dapibus. Nam
-                    sit
-                    amet velit quis turpis rhoncus vestibulum. Phasellus feugiat sem sit amet eros laoreet, sit amet
-                    interdum
-                    sem tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                    egestas.
-                    Pellentesque venenatis metus et porttitor interdum. Donec at leo sem. Sed nec ultricies nisi. </p>
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <img src="img/Equipe/Juliana.jpg">
+                <div class="w3-padding">
+                    <p style="font-weight: bold">Juliana dos Santos Paula</p> 
+                    <p>Presidente</p>       
+                </div>                 
+            </div>
 
-                <hr>
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <img src="img/Equipe/Roberto.jpg">
+                <div class="w3-padding">
+                    <p style="font-weight: bold">Roberto Tadeu dos Santos</p> 
+                    <p>Vice-Presidente</p>       
+                </div>                 
+            </div>
 
-                <img src="equipe/equipe1.JPG" alt="voluntários">
-                <h2 style="color:darkblue">Somos gratos a todos os voluntários</h2>
-                <p>Pellentesque porttitor mi venenatis, pharetra tellus vitae, egestas leo. Nullam euismod lorem vitae
-                    nisi
-                    cursus, ac fringilla dolor mattis. Mauris posuere, est a volutpat tempus, velit tellus consequat
-                    risus,
-                    feugiat condimentum neque erat vitae nibh. Pellentesque ac mauris libero.</p>
-                <p>Cras eget orci pulvinar, vehicula sapien eu, volutpat lorem. Duis tristique vehicula libero nec
-                    ornare. Proin
-                    ultricies tempor lorem non facilisis. </p>
-                <p>Pellentesque ac sem vel dui cursus sagittis. Cras non nulla nunc. Ut nulla orci, eleifend mollis
-                    lorem ut,
-                    congue mollis sapien. Vestibulum id fermentum mi, nec scelerisque velit. Sed sed lectus aliquam
-                    augue
-                    lobortis volutpat quis sit amet nisi. Proin ornare turpis congue nulla consectetur, sollicitudin
-                    euismod
-                    nisi vulputate. Cras tincidunt lacus eget risus posuere, pulvinar elementum turpis sollicitudin.
-                    Proin
-                    egestas blandit volutpat.</p>
-                <hr>
-    </main>
-    <!--Outras informações-->
-    <section>
-        <h3>Contatos</h3>
-        <ul>
-            <li><i class="fa fa-phone fa-lg "></i> (11)0000-9098</li>
-            <li><i class="fa fa-whatsapp fa-lg"></i>(11)9 0000-0000</li>
-            <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
-        </ul>
-    </section>
-    <!--Rodapé-->
-    <?php
-    include("rodape.php");
-?>
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <div class="w3-padding">
+                </div>                 
+            </div>
+
+        </div>
+
+        <div class="w3-row w3-center w3-padding-16">
+
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <div class="w3-padding">
+                </div>                 
+            </div>
+
+
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <img src="img/Equipe/Paulina.jpg">
+                <div class="w3-padding">
+                    <p style="font-weight: bold">Paulina Camila da Silva</p> 
+                    <p>Diretora Executiva</p>       
+                </div>                 
+            </div>
+
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <img src="img/Equipe/Rodolfo.jpg">
+                <div class="w3-padding">
+                    <p style="font-weight: bold">Rodolfo da Silva Costa</p> 
+                    <p>Diretor Financeiro</p>       
+                </div>                 
+            </div>
+
+            <div class="w3-quarter w3-center" style= "width:25%">
+                <div class="w3-padding">
+                </div>                 
+            </div>
+
+        </div>
+
+        <div class="w3-center w3-padding-16 textos">
+            <p>Contamos ainda com a colaboração de muitos voluntários em nossas feiras de adoção, eventos e em nossa sede.</p>
+            <p>Saiba como ajudar na seção <a style="font-weight:bold; color:#3f51b5" href="voluntario.php">Seja Voluntário</a>. Ficaremos felizes em te receber na equipe!</p>
+
+
+        </div>
+        
+
+        </main>
+        <!--Outras informações
+        <section>
+            <h3>Contatos</h3>
+              <ul>
+                  <li><i class="fa fa-phone fa-lg "></i> (11)0000-9098</li>
+                  <li><i class="fa fa-whatsapp fa-lg"></i>(11)9 0000-0000</li>
+                  <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
+              </ul>
+          </section>-->
+        
 </body>
 
-</html>
+<?php
+    include("rodape.php");
+?>

@@ -4,6 +4,22 @@
 <title>Login</title>
 
 <style>
+
+/*Configuração do rodapé para páginas em que ele não estava ficando fixo no fim da página*/
+.rodape {
+    width: 100%; 
+    float:center;
+    background: linear-gradient(to right,#ffc107,#ffdb4d);
+    padding: 10px;
+    border-top: 7px solid #3f51b5;
+    margin-top: 16px;
+    position: fixed;
+    height: 130px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
      
 input[type=text], select {
      width: 100%;
@@ -26,19 +42,12 @@ input[type=text], select {
  }
 
  input[type=submit] {
-     width: 100%;
-     background-color: blue;
-     color: white;
-     font-weight: bold;
-     padding: 14px 20px;
-     margin: 8px 0;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
- }
-
- input[type=submit]:hover {
-     background-color: darkblue;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    margin: 20px 0;
+    cursor: pointer;    
  }
  
  .center {
@@ -46,57 +55,45 @@ input[type=text], select {
      width: 20%;
      padding: 10px;
  }
- 
+ label, 
+ input {
+     font-family: "Montserrat Alternates", sans-serif;
+     font-weight:bold;
+     font-size: 1.2em;
+ }
+
 </style>
 
-<body class="w3-white">   
-    <div class="w3-center" style="border-radius: 5px; background-color: white; padding: 20px;">    
-        <h2>Login - Sistema de cadastro de animais para adoção</h2>        
+<body class="bg">   
+    <div class="w3-center bannerazul w3-round-xlarge">    
+        <h3 style="font-weight:bold">Login - Sistema de cadastro de animais para adoção</h3>        
     </div>
  
-    <div class="center" style="border-radius: 5px; background-color: white; padding: 20px;">
+    <div class="center">
         <?php
-            if(isset($_SESSION['nao_autenticado'])):
-        ?>        
-            <div class= "w3-panel w3-red">
+            if(isset($_SESSION['nao_autenticado'])) {
+                
+            echo '<div class= "w3-panel w3-red">
                 <p>Erro: Usuário e/ou senha inválidos.</p>
-            </div>
-        <?php
-            endif;
+            </div>';
+            }
         ?>
         
-        <form action="login_action.php" method="post" enctype="multipart/form-data">
+        <form class="w3-white w3-border w3-padding w3-round-xlarge" action="login_action.php" method="post" enctype="multipart/form-data">
             <label for="usuario">Usuário:</label><br>
             <input type="text" id="usuario" name="usuario" placeholder="Seu usuário" required>
             <br>          
             <label for="senha">Senha:</label><br>
             <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
-            <br>           
-            <input type="submit" value="Entrar">
+            <br>
+            <div class="w3-center">           
+            <input type="submit" value="Entrar" class="w3-btn w3-indigo">
+            </div>
         </form>
     </div>
 
 </body>
 
-<footer class="rodape">
-        <div class="social-icons">
-            <a href="#" class="btn-facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="btn-youtube"><i class="fa fa-youtube"></i></a>
-            <a href="#" class="btn-instagram"><i class="fa fa-instagram"></i></a>
-        </div>
-        <p class="copyright">
-            Copyright &#0169 &#x2764;&#128062;&#128062; 2021.
-        </p>
-    </footer>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js">
-    </script>
-    <script>
-        $(".btn-menu").click(function () {
-            $(".menu").show();
-        })
-        $(".btn-fechar").click(function () {
-            $(".menu").hide();
-        })
-    </script>
-
-</html>
+<?php
+include "rodape.php";
+?>

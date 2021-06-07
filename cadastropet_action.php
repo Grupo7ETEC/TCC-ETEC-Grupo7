@@ -1,13 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>Cadastro de animais para adoção</title>
-    </head>
-    <body>
+<?php
+    include("cabecalho.php");
+?>
+
+<title>Cadastro de animais</title>
+
+<!-- Configuração do rodapé para páginas em que ele não estava ficando fixo no fim da página-->
+<style>
+.rodape {
+    width: 100%; 
+    float:center;
+    background: linear-gradient(to right,#ffc107,#ffdb4d);
+    padding: 10px;
+    border-top: 7px solid #3f51b5;
+    margin-top: 16px;
+    position: fixed;
+    height: 130px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+</style>
+
+<body class="bg">
+ 
 <div class="w3-padding w3-content w3-third w3-display-middle">
 
     <?php
@@ -33,20 +49,26 @@
         
         if ($conexao->query($sql) === TRUE) {
             echo '
-            <a href="cadastropet.html">
-            <h1 class ="w3-button w3-blue">Cadastro realizado com sucesso! </h1>
+            <a href="cadastropet.php">
+            <h1 class ="w3-center w3-btn w3-round-xlarge w3-indigo">Cadastro realizado com sucesso! </h1>
         </a>
         ';
         } else {
             echo '
-            <a href="cadastropet.html">
-                <h1 class="w3-button w3-blue">ERRO!</h1>
+            <a href="cadastropet.php">
+                <h1 class="w3-center w3-btn w3-round-xlarge w3-indigo">Erro! Tente novamente.</h1>
             </a>
             ';
         }
     }
+
+    $conexao->close();
      
     ?>
-    </div>
-    </body>
-    </html>
+    </div>      
+       
+</body>
+
+<?php  
+    include("rodape.php");
+?>

@@ -1,6 +1,9 @@
 <?php
     include("cabecalho.php");
 ?>
+
+<body class="bg">
+
 <!-- Configuração do rodapé para páginas em que ele não estava ficando fixo no fim da página-->
 <style>
 .rodape {
@@ -18,8 +21,6 @@
     margin-bottom: 0px;
 }
 </style>
-
-<body class="bg">
        
     <?php
 
@@ -33,16 +34,8 @@
 
         $mail = new PHPMailer(true);
         $nome = $_POST['nome'];
-        $endereco = $_POST['endereco'];
-        $cep = $_POST['cep'];
         $email = $_POST['email'];
-        $tel= $_POST['tel'];
-        $contato = $_POST['contato'];
-        $horario = $_POST['horario'];
-        $pet = $_POST['nom_animal'];
-        $tipo = $_POST['tipo'];
-        $duvida = $_POST['duvida'];
-        $ajuda = $_POST['ajuda'];
+        $mensagem = $_POST['mensagem'];
 
         try {
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;
@@ -60,7 +53,7 @@
             $mail->addAddress('amor4patas.love@gmail.com');
 
             $mail->isHTML(true);
-            $mail->Subject = '=?UTF-8?B?'.base64_encode("Formulário de Adoção - Interessado: $nome").'?=';
+            $mail->Subject = '=?UTF-8?B?'.base64_encode("Formulário de Contato: $nome").'?=';
             $mail->Body = "
             <style type='text/css'>
             body {
@@ -75,39 +68,15 @@
             <html>
                 <table width='510'>
                     <tr>             
-                        <th>Formulário de Adoção - Dados do interessado</th>
+                        <th>Formulário de Contato</th>
                         <tr>
                             <td width='500'>Nome:  <b>$nome</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>Endereço:<b>  $endereco</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>CEP:  <b>$cep</b></td>
-                        </tr>
+                        </tr>                       
                         <tr>
                             <td width='320'>E-mail:  <b>$email</b></td>
-                        </tr>
+                        </tr>                        
                         <tr>
-                            <td width='320'>Telefone:  <b>$tel</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>Peferência de contato:  <b>$contato</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>Horário:  <b>$horario</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>Animal escolhido:  <b>$pet</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>Espécie:  <b>$tipo</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>Ainda não escolhi:  <b>$duvida</b></td>
-                        </tr>
-                        <tr>
-                            <td width='320'>Preciso de ajuda:  <b>$ajuda</b></td>
+                            <td width='320'>Mensagem:  <b>$mensagem</b></td>
                         </tr>
                     </tr>                            
                 </table>
@@ -115,15 +84,15 @@
             </html>
                     ";
 
-            $mail->AltBody = "Chegou o email";
+            $mail->AltBody = "Mensagem";
 
             if(!$mail->Send()) {
                 echo "Mailer Error: " . $mail->ErrorInfo;
             } else {
                 echo "<div class='banner w3-round-xlarge'>
                         <h1 style='font-weight:bold'>Obrigado!</h1>
-                        <h2>Seu formulário foi enviado.</h2>
-                        <h3>Nossa equipe entrará em contato.</h3>
+                        <h2>Sua mensagem foi enviada.</h2>
+                        <h3>Nossa equipe responderá em breve pelo e-mail informado.</h3>
                     </div>
                     <br>";
             }
@@ -133,19 +102,9 @@
         }
 
         ?>
-  
-    <!--Conteúdo
-    <section>
-        <h2>Contatos</h2>
-          <ul>
-              <li><i class="fa fa-phone fa-lg"></i> (11)0000-9098</li>
-              <li><i class="fa fa-whatsapp fa-lg"></i>(11)9 0000-0000</li>
-              <li><i class="fa fa-envelope fa-lg"></i>amor4patas.love@gmail.com</li>
-          </ul>
-      </section> -->
+      
 </body>
 
 <?php
-    include("rodape.php");
+    include 'rodape.php';
 ?>
-
