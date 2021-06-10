@@ -70,7 +70,7 @@ include("cabecalho.php");
 <body class="bg">  
 
     <div class="w3-center"> 
-        <div class="w3-button w3-red w3-center w3-margin-bottom w3-round-large">
+        <div class="w3-btn w3-red w3-center w3-margin-bottom w3-round-large">
             <p>
             <i class="fa fa-sign-out w3-large"></i>&nbsp;
             <a href="logout.php" class="w3-large">Sair</a></p>
@@ -80,7 +80,7 @@ include("cabecalho.php");
     </div>
     <div class="center">
 
-        <form action="cadastropet_action2.php" method="post" enctype="multipart/form-data">
+        <form action="cadastropet_action.php" method="post" enctype="multipart/form-data">
           
           <fieldset id="cadastropet">
             <legend class="w3-indigo">
@@ -97,8 +97,8 @@ include("cabecalho.php");
             <br>
             <label for="sexo">Sexo</label><br>
             <select id="sexo" name="sexo">
-                <option value="femea">Fêmea</option>
-                <option value="macho">Macho</option>
+                <option value="Fêmea">Fêmea</option>
+                <option value="Macho">Macho</option>
             </select>
             <br>
             <label for="idade">Idade</label><br>
@@ -119,7 +119,7 @@ include("cabecalho.php");
             <br>
         </fieldset>
             <div class="w3-center">
-                <input type="submit" value="Cadastrar" class="w3-indigo w3-btn">
+                <input type="submit" name="btnCadastrar" value="Cadastrar" class="w3-indigo w3-btn">
           </div>
         </form>
       </div>

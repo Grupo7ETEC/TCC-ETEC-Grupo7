@@ -1,8 +1,8 @@
 <footer class="rodape">
         <div class="social-icons w3-center">
-            <a href="https://www.facebook.com/" class="btn-facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.youtube.com/" class="btn-youtube"><i class="fa fa-youtube"></i></a>
-            <a href="https://www.instagram.com/" class="btn-instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="btn-facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" class="btn-youtube"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn-instagram"><i class="fa fa-instagram"></i></a>
         </div>
         <p class="copyright">
             Copyright &#0169 &#x2764;&#128062;&#128062; 2021.
