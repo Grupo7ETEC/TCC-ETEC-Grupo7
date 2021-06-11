@@ -69,15 +69,17 @@ include("cabecalho.php");
 
 <body class="bg">  
 
-    <div class="w3-center"> 
-        <div class="w3-btn w3-red w3-center w3-margin-bottom w3-round-large">
-            <p>
-            <i class="fa fa-sign-out w3-large"></i>&nbsp;
-            <a href="logout.php" class="w3-large">Sair</a></p>
-        </div>  
-        
-        <h2 class="banner w3-round-xlarge" style="width:60%; margin:auto">Cadastro de animais para adoção</h2>        
+    <div class="w3-center w3-margin-bottom">
+        <a href="telaADM.php">
+        <button class="w3-btn w3-large w3-amber w3-round-large w3-xlarge"><i class="fa fa-reply"></i>&nbsp;
+            Voltar    
+        </button></a>
     </div>
+        
+    <div class="w3-center">        
+        <h2 class="bannerazul w3-round-xlarge" style="width:60%; margin:auto">Cadastro de animais para adoção</h2>        
+    </div>
+
     <div class="center">
 
         <form action="cadastropet_action.php" method="post" enctype="multipart/form-data">
@@ -122,7 +124,7 @@ include("cabecalho.php");
                 <input type="submit" name="btnCadastrar" value="Cadastrar" class="w3-indigo w3-btn">
           </div>
         </form>
-      </div>
+    </div>
 
 </body>
 

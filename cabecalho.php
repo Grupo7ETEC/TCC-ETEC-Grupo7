@@ -11,7 +11,7 @@
     type="text.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Rancho&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Rancho&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -29,7 +29,7 @@
                         <i class="fa fa-heart-o w3-xxlarge"></i>
                         <p style="font-weight:bold">Adote</p>
                     </a>
-                    <a href="animais.php" class="w3-bar-item w3-button w3-padding-large w3-hover-text-indigo w3-text-indigo w3-hover-amber">
+                    <a href="animaisDB.php" class="w3-bar-item w3-button w3-padding-large w3-hover-text-indigo w3-text-indigo w3-hover-amber">
                         <i class="fa fa-paw w3-xxlarge"></i>
                         <p style="font-weight:bold">Animais</p>
                     </a>                    
@@ -65,7 +65,7 @@
                         <i class="fa fa-comments-o w3-xxlarge"></i>
                         <p style="font-weight:bold">Contato</p>
                     </a>
-                    <a href="login.php" class="w3-bar-item w3-button w3-padding-large w3-hover-text-indigo w3-text-indigo w3-hover-amber">
+                    <a href="telaADM.php" class="w3-bar-item w3-button w3-padding-large w3-hover-text-indigo w3-text-indigo w3-hover-amber">
                         <i class="fa fa-lock w3-xxlarge"></i>
                         <p style="font-weight:bold">Login</p>
                     </a>

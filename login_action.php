@@ -27,7 +27,7 @@
         
         if($row == 1) {
             $_SESSION['usuario'] = $usuario;
-            header('Location: cadastropet.php');
+            header('Location: telaADM.php');
             exit();
         } else {
             $_SESSION['nao_autenticado'] = true;
