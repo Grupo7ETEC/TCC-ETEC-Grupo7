@@ -1,0 +1,54 @@
+CREATE TABLE `animais` (
+  `pet_id` int(6) UNSIGNED NOT NULL,
+  `pet_nome` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `pet_especie` varchar(4) CHARACTER SET latin1 NOT NULL,
+  `pet_sexo` varchar(10) CHARACTER SET latin1 NOT NULL,
+  `pet_idade` varchar(15) CHARACTER SET latin1 NOT NULL,
+  `pet_pelagem` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `pet_convive` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `pet_obs` varchar(300) CHARACTER SET latin1 NOT NULL,
+  `pet_foto1` varchar(100) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+
+CREATE TABLE `login` (
+  `usuario_id` int(11) NOT NULL,
+  `usuario` varchar(200) NOT NULL,
+  `senha` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `login` (`usuario_id`, `usuario`, `senha`) VALUES
+(2, 'amor4patasadmin', 'd166876d78ff488339aa67ffa3d6ea05'),
+(3, 'teste', '698dc19d489c4e4db73e28a713eab07b');
+
+
+CREATE TABLE `voluntarios` (
+  `idvoluntario` int(11) NOT NULL,
+  `vnome` varchar(150) NOT NULL,
+  `vendereco` varchar(300) NOT NULL,
+  `vcep` varchar(9) NOT NULL,
+  `vemail` varchar(45) NOT NULL,
+  `vtelefone` varchar(13) NOT NULL,
+  `vdia` varchar(300) DEFAULT NULL,
+  `vhorario` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `animais`
+  ADD PRIMARY KEY (`pet_id`);
+
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`usuario_id`);
+
+ALTER TABLE `voluntarios`
+  ADD PRIMARY KEY (`idvoluntario`);
+
+ALTER TABLE `animais`
+  MODIFY `pet_id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+
+ALTER TABLE `login`
+  MODIFY `usuario_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+ALTER TABLE `voluntarios`
+  MODIFY `idvoluntario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
