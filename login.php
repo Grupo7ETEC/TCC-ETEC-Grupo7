@@ -66,7 +66,7 @@ input[type=text], select {
 
 <body class="bg">   
     <div class="w3-center bannerazul w3-round-xlarge">    
-        <h3 style="font-weight:bold">Login - Sistema de cadastro de animais para adoção</h3>        
+        <h3 style="font-weight:bold">Login - Administrador</h3>        
     </div>
  
     <div class="center">
